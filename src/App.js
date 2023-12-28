@@ -2,8 +2,9 @@ import React from "react"
 import { Provider } from "react-redux";
 import store from "./Redux/store.js";
 import './App.css';
-import Counter from "./Redux/components/Counter.js"
-import InputShower from "./Redux/components/InputShower.js";
+import Counter from "./Redux/containers/Counter.js"
+import InputShower from "./Redux/containers/InputShower.js";
+import FetchData from "./Redux/containers/FetchData.js";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <div id="app">
       <Counter/>
       <InputShower/>
+      <FetchData/>
       </div>
     </Provider>
     

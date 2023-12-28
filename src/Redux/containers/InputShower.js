@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import { showData } from '../actions'
 
-function InputShower(props) {
+function InputShower() {
     const data = useSelector(state => state.inputData.data)
     const dispatch = useDispatch()
 
