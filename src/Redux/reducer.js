@@ -1,4 +1,4 @@
-import { INCREMENT,DECREMENT, SHOWDATA, FETCH_DATA_SUCCESS,FETCH_DATA_FAILED } from "./actionTypes";
+import { INCREMENT,DECREMENT, SHOWDATA, FETCH_DATA_SUCCESS,FETCH_DATA_FAILED, CLEAR_FETCHED_DATA } from "./actionTypes";
 
 const initialState = {
     count : 0,
@@ -41,14 +41,23 @@ const reducer = (state = initialState,action)=>{
                 }
             }
 
-            case FETCH_DATA_FAILED :
-                return{
-                    ...state,
-                    fetchedData : {
-                        status : action.payload.status,
-                        data : action.payload.data
-                    }
+        case FETCH_DATA_FAILED :
+            return{
+                ...state,
+                fetchedData : {
+                    status : action.payload.status,
+                    data : action.payload.data
                 }
+            }
+
+        case CLEAR_FETCHED_DATA :
+            return {
+                ...state,
+                fetchedData : {
+                    status : action.payload.status,
+                    data : action.payload.data
+                }
+            }
 
         default : return state;
     }

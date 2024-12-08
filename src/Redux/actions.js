@@ -1,4 +1,4 @@
-import { INCREMENT,DECREMENT,SHOWDATA, FETCH_DATA_SUCCESS, FETCH_DATA_FAILED } from "./actionTypes"
+import { INCREMENT,DECREMENT,SHOWDATA, FETCH_DATA_SUCCESS, FETCH_DATA_FAILED, CLEAR_FETCHED_DATA } from "./actionTypes"
 import axios from "axios"
 
 const increment = ()=>{
@@ -36,6 +36,16 @@ const fetchDataSuccess = (data,status)=>{
     }
 }
 
+const clearFetchedData = (status)=>{
+    return {
+        type : CLEAR_FETCHED_DATA,
+        payload : {
+            status : status,
+            data: []
+        }
+    }
+}
+
 const fetchDataFailed = (error)=>{
     return {
         type : FETCH_DATA_FAILED,
@@ -59,4 +69,4 @@ const fetchData = ()=>{
     }
 }
 
-export {increment,decrement,showData,fetchData}
+export {increment,decrement,showData,fetchData,clearFetchedData}

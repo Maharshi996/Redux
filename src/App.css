@@ -1,69 +1,78 @@
-h4{
-    text-align: center;
-    margin : 20px;
-    color : rgb(145, 124, 214);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+h4 {
+  text-align: center;
+  margin: 20px;
+  color: rgb(145, 124, 214);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-#app{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100vh;
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
 }
-#HomeDiv, #InputShower, #fetchData{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin : auto;
-    height:fit-content;
-    width : 100vh;
-    border: 2px dotted black;
-    
-}
-
-#InputShower > input, #InputShower > h3{
-    margin : 30px;
-    width : 50vh;
-    color : purple;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+#HomeDiv,
+#InputShower,
+#fetchData {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  height: fit-content;
+  width: 100vh;
+  border: 2px dotted black;
 }
 
-#HomeDiv > input, #fetchData > button{
-    height: 70px;
-    width : 200px;
-    background-color: wheat;
-    color : palevioletred;
-    font-family: 'Courier New', Courier, monospace;
-    margin : 20px;
-    border-radius: 18px;
-    text-align: center;
-}
-#HomeDiv >h1{
-    height: 100px;
-    width : 100px;
-    color : lightslategray;
-    margin : 20px;
-    text-align: center;
+#InputShower > input,
+#InputShower > h3 {
+  margin: 30px;
+  width: 50vh;
+  color: purple;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#HomeDiv > input:hover, #fetchData>button:hover{
-    height : 80px;
-    width : 210px;
-    background-color: lightsteelblue;
-    color : black;
+#HomeDiv > input,
+#fetchData > button,
+#HomeDiv > h1 {
+  height: 70px;
+  width: 200px;
+  background-color: wheat;
+  color: palevioletred;
+  font-family: "Courier New", Courier, monospace;
+  margin: 20px;
+  border-radius: 18px;
+  text-align: center;
 }
-#dataContainer > h6{
-    display: flex;
-    color :rgb(96, 216, 227);
-    flex-direction: column;
-    margin : 5px;
-    background-color: rgb(39, 37, 43);
-    text-align: center;
-    border-radius: 8px;
-    padding :5px;
+#HomeDiv > h1 {
+  height: 70px;
+  width: 100px;
+  color: lightslategray;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-    
+#HomeDiv > input:hover,
+#fetchData > button:hover {
+  height: 80px;
+  width: 210px;
+  background-color: lightsteelblue;
+  color: black;
+}
+#dataContainer > h6 {
+  display: flex;
+  color: rgb(96, 216, 227);
+  flex-direction: column;
+  margin: 5px;
+  background-color: rgb(39, 37, 43);
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+}
+.infoText {
+  color: rgb(255, 0, 242);
+  height: fit-content;
+}
